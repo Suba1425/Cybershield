@@ -1,0 +1,39 @@
+{
+  "name": "cybershield-portal",
+  "version": "1.0.0",
+  "description": "CyberShield — Interactive Cybersecurity Awareness & Training Portal (Final-Year College Capstone Project)",
+  "main": "server/src/server.js",
+  "scripts": {
+    "client:dev": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "seed": "cd server && npm run seed",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:all": "npm install && npm run install:client && npm run install:server"
+  },
+  "keywords": [
+    "cybersecurity",
+    "awareness",
+    "phishing-simulator",
+    "password-security",
+    "url-analyzer",
+    "educational-portal",
+    "react",
+    "vite",
+    "express",
+    "mongodb",
+    "capstone-project"
+  ],
+  "author": "CyberShield Capstone Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/cybershield.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

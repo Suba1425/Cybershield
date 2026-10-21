@@ -1,0 +1,53 @@
+# ==============================
+# CyberShield — .gitignore
+# ==============================
+
+# Node.js dependencies (never commit these)
+node_modules/
+**/node_modules/
+.pnpm-store/
+
+# Production build output
+client/dist/
+client/build/
+
+# Environment variables — NEVER commit real .env files
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+server/.env
+client/.env
+
+# NPM / Yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Logs & temp files
+logs/
+*.log
+tmp/
+temp/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# MongoDB local data (if using local data directory)
+data/
+
+# Coverage reports
+coverage/
+.nyc_output/
